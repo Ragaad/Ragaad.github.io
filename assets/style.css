@@ -1,7 +1,7 @@
 .profile-pic {
   flex-shrink: 0;
-  width: 20px;       /* default size */
-  height: 30px;
+  width: 20px !important;       /* default size */
+  height: 30px !important;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--chipborder);
