@@ -22,38 +22,46 @@ ul { margin: 8px 0 0 18px; }
   .item header { flex-direction: column; align-items: flex-start; }
 }
 
+/* reset any existing table striping/backgrounds */
 .tbl.colorful-table tbody tr { background: transparent !important; }
 
-.colorful-table {
-  border-collapse: collapse;
-  width: 100%;
+/* colorful theme with higher specificity */
+.tbl.colorful-table {
+  border-collapse: collapse !important;
+  width: 100% !important;
   overflow: hidden;
   border-radius: 12px;
 }
 
-.colorful-table thead {
-  background: linear-gradient(90deg, #60a5fa, #3b82f6);
-  color: white;
+.tbl.colorful-table thead {
+  background: linear-gradient(90deg, #60a5fa, #3b82f6) !important;
+  color: #fff !important;
 }
 
-.colorful-table th, 
-.colorful-table td {
-  padding: 10px 12px;
-  text-align: left;
+.tbl.colorful-table th,
+.tbl.colorful-table td {
+  color: red !important;
+}
+.tbl.colorful-table td {
+  padding: 10px 12px !important;
+  text-align: left !important;
+  border: 1px solid var(--line, #22262d) !important; /* uses your var if present */
 }
 
-.colorful-table tbody tr:nth-child(odd) {
-  background-color: rgba(96, 165, 250, 0.08); /* light blue */
+/* alternating rows */
+.tbl.colorful-table tbody tr:nth-child(odd) {
+  background-color: rgba(96, 165, 250, 0.12) !important;
+}
+.tbl.colorful-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.04) !important;
 }
 
-.colorful-table tbody tr:nth-child(even) {
-  background-color: rgba(255, 255, 255, 0.03); /* subtle dark */
+/* hover highlight */
+.tbl.colorful-table tbody tr:hover {
+  background-color: rgba(96, 165, 250, 0.28) !important;
+  transition: background-color .2s ease;
 }
 
-.colorful-table tbody tr:hover {
-  background-color: rgba(96, 165, 250, 0.25);
-  transition: background-color 0.3s ease;
-}
 
 .profile-pic {
   flex-shrink: 0;
