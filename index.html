@@ -3,63 +3,391 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jane Doe — Resume</title>
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="assets/print.css" media="print">
-  <meta name="description" content="Resume of Jane Doe — visual analytics, ML, HCI.">
+  <title>Dr.-Ing. Ragaad AlTarawneh — Resume</title>
+  <meta name="description" content="Resume of Dr.-Ing. Ragaad AlTarawneh (Systems Research Engineer/Scientist; Lecturer; Assistant Professor).">
+  <style>
+    :root {
+      --bg: #0b0c10;
+      --card: #121418;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #60a5fa;
+      --line: #22262d;
+      --chip: #1b1f26;
+      --chipborder: #252b35;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin:0; padding:0; background:var(--bg); color:var(--text);
+      font:15px/1.6 system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { max-width: 980px; margin: 32px auto; padding: 28px; background: var(--card); border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,.35); }
+    header.header { display:flex; flex-wrap:wrap; align-items: baseline; gap: 8px 16px; }
+    header.header h1 { margin: 0; font-size: 2rem; }
+    .meta { color: var(--muted); }
+    .actions { margin-left: auto; }
+    .btn { display:inline-block; padding: 8px 12px; border-radius: 999px; background: var(--chip); border: 1px solid var(--chipborder); }
+    h2 { margin-top: 28px; border-bottom: 1px solid var(--line); padding-bottom: 6px; font-size: 1.25rem; }
+    section { margin-top: 16px; }
+    .two-col { display:grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .item { padding: 10px 0 0; }
+    .item header { display:flex; justify-content: space-between; align-items: baseline; gap: 12px; }
+    .item h3 { margin: 0; font-size: 1.05rem; }
+    .item .where { color: var(--muted); }
+    .item .when { color: var(--muted); white-space: nowrap; }
+    ul { margin: 8px 0 0 18px; }
+    .tags { list-style:none; display:flex; flex-wrap:wrap; gap:8px; margin:8px 0 0; padding:0; }
+    .tags li { background: var(--chip); border:1px solid var(--chipborder); padding: 4px 10px; border-radius: 999px; font-size: .9rem; }
+    details { background: #0f1116; border:1px solid #1f2430; border-radius: 12px; padding: 10px 12px; margin-top: 10px; }
+    details > summary { cursor: pointer; list-style: none; }
+    details > summary::-webkit-details-marker { display: none; }
+    details > summary { display:flex; align-items:center; gap:8px; }
+    details > summary .caret { transition: transform .2s ease; }
+    details[open] > summary .caret { transform: rotate(90deg); }
+    ol.publist, ul.publist { margin: 8px 0 0 18px; }
+    .grid { display:grid; gap: 10px; }
+    .tbl { width:100%; border-collapse: collapse; border:1px solid var(--line); margin-top: 8px; }
+    .tbl th, .tbl td { border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align: top; }
+    .footer { margin-top: 28px; display:flex; justify-content: space-between; align-items:center; color: var(--muted); }
+    .small { font-size: .9rem; color: var(--muted); }
+    @media (max-width: 720px) {
+      .container { margin: 16px; padding: 16px; }
+      .two-col { grid-template-columns: 1fr; }
+      .item header { flex-direction: column; align-items: flex-start; }
+    }
+    @media print {
+      @page { margin: 14mm; }
+      body { background: #fff !important; color: #000 !important; }
+      .container { box-shadow:none !important; background:#fff !important; border-radius:0 !important; }
+      a { color:#000 !important; text-decoration: none !important; }
+      .actions, .footer { display:none !important; }
+      details { border: none !important; padding: 0 !important; }
+    }
+  </style>
 </head>
 <body>
   <main class="container">
     <header class="header">
-      <h1>Jane Doe</h1>
-      <p>San Francisco, CA · janedoe@email.com · <a href="https://linkedin.com/in/janedoe" rel="me">linkedin.com/in/janedoe</a></p>
+      <h1>Dr.-Ing. Ragaad AlTarawneh</h1>
+      <span class="meta">Fremont, CA, USA · (971) 770-8525 · <a href="mailto:raghed12@gmail.com">raghed12@gmail.com</a></span>
+      <div class="actions">
+        <a class="btn" href="#" onclick="window.print()">Print / Save as PDF</a>
+      </div>
     </header>
 
     <section>
-      <h2>Summary</h2>
-      <p>Data viz + ML researcher focusing on interactive analytics and human-centered AI. 8+ years of experience in academia and industry.</p>
-    </section>
-
-    <section>
-      <h2>Skills</h2>
+      <h2>Profile</h2>
+      <p class="small">Systems research engineer/scientist and lecturer with experience across AI cloud-scale visual data systems, graph databases, video analytics, and scalable systems. Industry roles at Intel Labs and academic roles at San Francisco State University and Mutah University.</p>
       <ul class="tags">
-        <li>System Design</li><li>Visual Analytics</li><li>Machine Learning</li><li>Python</li><li>JavaScript/D3</li>
+        <li>AI & Visual Data</li><li>Graph Databases</li><li>Video Analytics</li><li>Scalable Systems</li><li>HCI & Visualization</li>
       </ul>
     </section>
 
     <section>
-      <h2>Experience</h2>
-      <article class="item">
-        <header>
-          <h3>Associate Professor</h3>
-          <div class="meta"><span>SFSU</span><span>2021–Present</span></div>
-        </header>
-        <ul>
-          <li>Led research in interactive analytics; advised 6 graduate students.</li>
-          <li>Published in EuroVis, IEEE TVCG, ACM CHI.</li>
-        </ul>
-      </article>
+      <h2>Professional &amp; Research Experience</h2>
 
-      <article class="item">
+      <div class="item">
         <header>
-          <h3>Research Scientist</h3>
-          <div class="meta"><span>Meta</span><span>2019–2021</span></div>
+          <h3>Systems Research Engineer/Scientist</h3>
+          <span class="when">05/2017 – 08/2024</span>
         </header>
-        <ul>
-          <li>Built visualization tooling used by 100+ engineers.</li>
-          <li>Worked on scalable ML model introspection.</li>
-        </ul>
-      </article>
+        <div class="where">Intel Labs, Intel Corporation, USA</div>
+        <div>Key research areas: AI Cloud-scale visual data systems, graph database, video analytics, scalable systems.</div>
+      </div>
+
+      <div class="item">
+        <header>
+          <h3>Lecturer</h3>
+          <span class="when">05/2017 – 08/2024</span>
+        </header>
+        <div class="where">Department of Computer Science, San Francisco State University, USA</div>
+      </div>
+
+      <div class="item">
+        <header>
+          <h3>Assistant Professor</h3>
+          <span class="when">10/2015 – 10/2021</span>
+        </header>
+        <div class="where">Department of Computer Science, Mutah University, Jordan</div>
+      </div>
+
+      <div class="item">
+        <header>
+          <h3>Research Assistant</h3>
+          <span class="when">2010 – 2015</span>
+        </header>
+        <div class="where">Computer Graphics and HCI Group, Department of Computer Science, University of Kaiserslautern, Germany</div>
+      </div>
     </section>
 
     <section>
       <h2>Education</h2>
-      <p><strong>Ph.D., Computer Science</strong> — 2019</p>
+      <div class="item">
+        <header>
+          <h3>Ph.D. in Computer Engineering</h3>
+          <span class="when">2010 – 2015</span>
+        </header>
+        <div class="where">RPTU Rheinland-Pfälzische Technische Universität Kaiserslautern-Landau, Germany</div>
+        <div><em>Thesis:</em> “Interactive Visual Support for Understanding the Structural and Behavioral Aspects of Embedded Systems”.</div>
+      </div>
+
+      <div class="item">
+        <header>
+          <h3>M.S. in Computer Networks (1st in class)</h3>
+          <span class="when">2005 – 2007</span>
+        </header>
+        <div class="where">Jordan University, Jordan</div>
+        <div><em>Thesis:</em> “Applying Genetic Algorithms to Find the Best Stable Cluster in Ad Hoc Networks”.</div>
+      </div>
+
+      <div class="item">
+        <header>
+          <h3>B.S. in Computer Science (1st in class)</h3>
+          <span class="when">2001 – 2004</span>
+        </header>
+        <div class="where">Mutah University, Jordan</div>
+        <div>(4-year degree completed in 3 years)</div>
+      </div>
     </section>
 
-    <footer class="footer">
-      <a class="btn" href="#" onclick="window.print()">Print / Save as PDF</a>
-    </footer>
+    <section>
+      <h2>Honors &amp; Awards</h2>
+      <ul class="publist">
+        <li>Best Paper Award, SIGRAD 2014 Conference — Gothenburg, Sweden (Apr 2014)</li>
+        <li>Best Paper Award, PID-MAD 2013 Workshop — MobileHCI '13, Munich, Germany (Aug 2013)</li>
+        <li>DFG Scholarship — German Research Foundation (May 2011)</li>
+        <li>Mutah University Scholarship — Partial scholarship to support PhD studies (Jun 2009)</li>
+        <li>King Abdullah II Scholarship for Distinct Students — Ministry of Education, Jordan (Oct 2005)</li>
+        <li>Jordan Military Scholarship for Distinct Students — Mu'tah University (Oct 2001)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Publications</h2>
+
+      <details>
+        <summary><span class="caret">▶</span> Journal Articles (peer-reviewed)</summary>
+        <ol class="publist">
+          <li>Sujay Muramalla, Ragaad AlTarawneh, Shah Rukh Humayoun, Ricarda Moses, Sven Panis, and Achim Ebert. Radial vs. Rectangular: Evaluating Visualization Layout Impact on User Task Performance of Hierarchical Data. <em>IJCSIS</em> 12(2): 17–31, Dec 2017.</li>
+          <li>Ragaad AlTarawneh and Shah Rukh Humayoun. Evolving Mobile Prototypes Towards the Best-suited Design and Interaction Schema using the Genetic Algorithm. <em>IJMHCI</em> 6(2): 1–10, 2014.</li>
+          <li>Chaunte Lacewell, Nilesh Ahuja, Pablo Munoz, Parul Datta, Ragaad Altarawneh, Vui Seng Chua, Nilesh Jain, Omesh Tickoo, Ravi Iyer. E2E Visual Analytics: Achieving &gt;10X Edge/Cloud Optimizations. <em>IEEE NAS</em>, 2021.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Book Chapters</summary>
+        <ol class="publist">
+          <li>R. AlTarawaneh, P. Keller, A. Ebert. A General Introduction To Graph Visualization Techniques. IRTG 1131 Workshop 2011.</li>
+          <li>R. AlTarawneh, M. Steiner, D. Taibi, S. R. Humayoun, P. Liggesmeyer. Does Visualization Speed up the Safety Analysis Process? <em>LNCS 8696</em>, 2014.</li>
+          <li>R. AlTarawneh, J. Bauer, S. R. Humayoun, P. Keller, A. Ebert. The Reflection Layer Extension to the Stereoscopic Highlight Technique for Node-Link Diagrams. <em>ISVC '13, LNCS 8034</em>.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Conference Articles</summary>
+        <ol class="publist">
+          <li>L. M. Aguilar, R. AlTarawneh, S. R. Humayoun. WebGraphViz: A WebGL-Based Interactive Graph Visualization Tool for Retail Analytics. <em>EuroVis 2025</em>, Luxembourg. (Accepted)</li>
+          <li>J. Zapata, S. F. Haider, R. AlTarawneh, S. R. Humayoun. GraDVis: A Visualization Tool for a Visual Data Management System. <em>EICS Companion ’24</em>, Cagliari, Italy, 2024. https://doi.org/10.1145/3660515.3662833</li>
+          <li>S. R. Humayoun, S. Zaidi, R. AlTarawneh. SamS-Vis: A Tool to Visualize Summary View Using Sampled Data. <em>INTERACT 2023</em>, LNCS 14145: 557–562.</li>
+          <li>S. R. Humayoun, G. Abbas, R. AlTarawneh. Touch-behavioral Authentication on Smartphones using Machine Learning. <em>IUI ’22 Companion</em>, Helsinki, 2022.</li>
+          <li>S. R. Humayoun, I. Mansour, R. AlTarawneh. TEVisE: Explore Evolution of Keywords' Relations in Tweet Data. <em>INTERACT’21</em>.</li>
+          <li>S. R. Humayoun, S. M. Hasan, R. AlTarawneh, A. Ebert. Visualizing Software Hierarchy and Metrics Over Releases. <em>AVI 2018</em>.</li>
+          <li>S. R. Humayoun, K. Bhambri, R. AlTarawneh. BiD-Chord: Extended Chord Diagram... <em>AVI 2018</em>.</li>
+          <li>G. Abbas, S. R. Humayoun, R. AlTarawneh, A. Ebert. Simple Shape-based Touch Behavioral Biometrics... <em>AVI 2018</em>.</li>
+          <li>S. R. Humayoun, S. Ardalan, R. AlTarawneh, A. Ebert. TExVis: Explore Twitter Data. <em>EuroVis 2017</em>.</li>
+          <li>S. R. Humayoun, S. H. Ali, R. AlTarawneh, A. Ebert. Associations with Hierarchical Social Circles. <em>EuroVis 2017</em>.</li>
+          <li>R. Moses, S. R. Humayoun, R. AlTarawneh, A. Ebert. Cognitive Load: Force-directed vs. Chord Layout. <em>EuroVis 2017</em>.</li>
+          <li>S. R. Humayoun, P. Rath, R. Altarawneh, A. Ebert. Car/Ride Sharing Smartwatch Apps. <em>BCS-HCI 2017</em>.</li>
+          <li>R. Altarawneh, A. Hassanat, S. R. Humayoun, M. Alkoshman. Educational Mobile App for Children in South Jordan. <em>BCS-HCI 2017</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun, A. Ebert. Can We Interpret the Depth? <em>NordiCHI ’16</em>.</li>
+          <li>S. Muramalla, R. AlTarawneh, S. R. Humayoun, R. Moses, A. Ebert. Sunburst vs. Icicle. <em>AC 2016</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun, A. Ebert, P. Liggesmeyer. Failure Understanding in Embedded Systems. <em>BCS-HCI 2016</em>.</li>
+          <li>S. R. Humayoun, H. Ezaiza, R. AlTarawneh, A. Ebert. Multi-Layered Chord Layout. <em>AVI 2016</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun. Enhanced Interactive Sunburst. <em>AVI 2016</em>.</li>
+          <li>H. Ezaiza, S. R. Humayoun, R. AlTarawneh, A. Ebert. PerSoN-Vis. <em>CHI'16 EA</em>.</li>
+          <li>S. R. Humayoun, Y. Dubinsky, R. AlTarawneh. Using IoTGolog to Formalize IoT Scenarios. <em>IEEE WF-IoT 2015</em>.</li>
+          <li>S. R. Humayoun, J. Khan, S. M. Hasan, R. AlTarawneh, A. Ebert. Hi-AppV. <em>ITS 2015</em>.</li>
+          <li>S. R. Humayoun, M. Sharf, R. AlTarawneh, A. Ebert, T. Catarci. ViZCom. <em>ITS 2015</em>.</li>
+          <li>R. AlTarawneh, R. J. Ibraheem, S. R. Humayoun, A. Ebert. Position Patterns with Shared Tiled-Wall. <em>ITS 2015</em>.</li>
+          <li>A. Islam, R. AlTarawneh, S. R. Humayoun, S. Baron, A. Ebert. ViQAP. <em>LDAV 2015</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun, J. Schultz, A. Ebert, P. Liggesmeyer. LayMan. <em>ECSAW '15</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun, A. Ebert. Visualizing Spatial/Non-Spatial Data Types. <em>INTERACT 2015</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun, A. Ebert. Variation in Stereoscopic Depth. <em>3DUI 2015</em>.</li>
+          <li>R. AlTarawneh, A. Griesser, J. Bauer, S. R. Humayoun, A. Ebert. 3DintEx. <em>3DUI 2014</em>.</li>
+          <li>R. AlTarawneh, J. Bauer, S. R. Humayoun, A. Ebert, P. Liggesmeyer. Safety Aspects in Embedded Systems. <em>IUI Companion '14</em>.</li>
+          <li>R. AlTarawneh, J. Schultz, S. R. Humayoun. CluE. <em>PacificVis 2014</em>.</li>
+          <li>R. AlTarawneh, S. R. Humayoun. Two-Perspective Visualization in CS Education. <em>CSERC '13</em>.</li>
+          <li>R. AlTarawneh, J. Bauer, S. R. Humayoun, P. Keller, A. Ebert. Extended Stereoscopic Highlighting. <em>CGIM 2013</em>.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Workshop Articles</summary>
+        <ol class="publist">
+          <li>R. AlTarawneh, S. R. Humayoun, A.-k. Al-Jaafreh. Towards Optimizing the Sunburst Visualization for Smart Mobile Devices. <em>DIViM 2015 (INTERACT Adjunct)</em>.</li>
+          <li>R. AlTararwneh, C. Strong, L. Remis, P. Muñoz, S. Addicam, S. Kambhatla. Navigating the visual fog: analyzing and managing visual data from edge to cloud. <em>USENIX HotEdge '19</em>.</li>
+        </ol>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Articles at arXiv Archive</summary>
+        <ol class="publist">
+          <li>R. N. Jaber, R. AlTarawneh, S. R. Humayoun. Characterizing Pairs Collaboration in a Mobile-equipped Shared-Wall Display Supported Collaborative Setup. <a href="https://arxiv.org/abs/1904.13364">arXiv:1904.13364</a></li>
+        </ol>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Peer-reviewed Non-archival</summary>
+        <ol class="publist">
+          <li>N. Mir*, R. AlTarawneh, S. R. Humayoun. Circles: Inter-Model Comparison of Multi-Classification Problems with High Number of Classes. <em>IEEE VIS 2023</em>. <a href="https://arxiv.org/abs/2309.05672">arXiv:2309.05672</a></li>
+          <li>R. Moses, S. R. Humayoun, R. AlTarawneh, A. Ebert. Evaluating Cognitive Load: Force-directed Layout vs. Chord Layout. EuroVis Posters, 2017.</li>
+          <li>L. Remis, V. Gupta-Cledat, C. Strong, R. Altarawneh. VDMS: Efficient Big-Visual-Data Access for ML Workloads. <em>arXiv:1810.11832</em>.</li>
+          <li>R. AlTarawneh, J. Bauer, N. Menck, S. R. Humayoun, A. Ebert. assistME: A Collaborative Mobile Environment... MobilENG 2014 (CSD&M 2014), Paris. <a href="https://arxiv.org/abs/1502.03678">arXiv</a></li>
+          <li>R. AlTarawneh, S. R. Humayoun. Evolving Prototypes Using the Genetic Algorithm. MobileHCI '13 Workshop: PID-MAD 2013.</li>
+          <li>R. Altarawneh. Stereoscopic Visualization Techniques for Embedded System Graphs. Voices of VR.</li>
+        </ol>
+      </details>
+    </section>
+
+    <section>
+      <h2>Conference Activities</h2>
+      <details>
+        <summary><span class="caret">▶</span> Organizing / Committees</summary>
+        <ul class="publist">
+          <li>ACM IUI (Program Committee & Reviewer), 2020–2024</li>
+          <li>16th International Conference on Communication Systems and NETworkS (Demo co-chair), 2023</li>
+          <li>USENIX HotEdge '20 (Program Committee), 2020</li>
+          <li>Master Program in Visual Computing, Colombia — preparation/launch; lecturer, postdoc researcher, curriculum reviewer, workshops organizer, 2014–2017</li>
+          <li>VIER4ES2 project, 2012–2014</li>
+          <li>CSD&M for IoT Workshop (Program Committee), 2015</li>
+          <li>USARE Workshop (Program Committee), 2017</li>
+          <li>IFIP WG 13.7 DIVIM 2015 (Program Committee)</li>
+          <li>IEEE & IFIP 2nd Int'l Workshop on Usability and Accessibility focused Requirements Engineering (USARE 2014) (Program Committee)</li>
+        </ul>
+      </details>
+
+      <details>
+        <summary><span class="caret">▶</span> Reviewing</summary>
+        <ul class="publist">
+          <li>ACM CHI – LBW 2019, 2022–2025; CHI 2014–2019</li>
+          <li>ACM IUI 2022, 2024, 2025</li>
+          <li>INTERACT 2019, 2021</li>
+          <li>ACM VRST 2016, 2019</li>
+          <li>CSCW 2015–2019</li>
+          <li>IEEE InfoVis 2017, 2018; VAST 2010, 2018</li>
+          <li>EuroVis 2018, 2019; PacificVis 2019</li>
+          <li>IEEE VR 2018</li>
+          <li>MobileHCI 2015–2019</li>
+          <li>ICMI 2019; DIS 2018, 2019; MOBILESoft 2017, 2018; UIST 2015, 2016, 2019; NordiCHI 2016, 2018; AVI 2010, 2018</li>
+        </ul>
+        <p class="small"><strong>Journal Reviewing:</strong> Journal of Systems and Software; IEEE Software; Elsevier Information Systems.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Supervising &amp; Mentoring</h2>
+      <table class="tbl">
+        <thead>
+          <tr><th>Year</th><th>Role</th><th>Student</th><th>Thesis Title</th><th>Institution</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>2025</td><td>Master thesis co-supervisor</td><td>Seham Ahmad</td><td>Designing and Developing a UI for LangChain Integrated with TileDB for large LLMs</td><td>San Francisco State University</td></tr>
+          <tr><td>2025</td><td>Master thesis co-supervisor</td><td>Luis Miguel Aguilar</td><td>Visualizing large graph database in Visual Data Management Systems</td><td>San Francisco State University</td></tr>
+          <tr><td>2024</td><td>Master thesis co-supervisor</td><td>Farhan Haider</td><td>Low-Compute Video Object Detection and Visualization Framework for Accuracy Analysis</td><td>San Francisco State University</td></tr>
+          <tr><td>2024</td><td>Master thesis co-supervisor</td><td>Jarrett Zapata</td><td>Design and Implementation of a Graph Visualization Tool for Intel Labs Video Database Management System</td><td>San Francisco State University</td></tr>
+          <tr><td>2019</td><td>Master thesis co-supervisor</td><td>Ghazanfar Abbas</td><td>Behavioral-based Authentication on Smartphones using Machine Learning Approaches</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2018</td><td>Master thesis co-supervisor</td><td>Ibrahim Mansour</td><td>Interactive Visualization of Twitter Data over Time</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2018</td><td>Master thesis co-supervisor</td><td>Mannan Maqbool</td><td>Interactive Visualization for the Evolution of Twitter Data</td><td>Frankfurt University of Applied Science</td></tr>
+          <tr><td>2018</td><td>Master thesis co-supervisor</td><td>Abhigyan Mahajan</td><td>Assessment and Deployment of Evaluation Heuristics for Smartwatch Applications</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Syed Moiz Hasan</td><td>Interactive Visualization Support for Software Metrics</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Erinchin Telatar</td><td>Comparison of Object Perception in HMD and Desktop Monitor</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Mustafa Irshad</td><td>Interactive Visualization Support for Neural Networks Analysis</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Syed Ahsan Shah</td><td>Interactive Visualization Support for the Analysis of Machine Learning Classifiers</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Syed Hammad Ali</td><td>Social-Circles Exploration in Social Media through Interactive Visualizations</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Saman Ardalan</td><td>Interactive Visualization Support to Explore Tweets Data</td><td>University of Kaiserslautern</td></tr>
+          <tr><td>2017</td><td>Master thesis co-supervisor</td><td>Muhammad Faizaan</td><td>Gesture Recognition on a Humanoid Robot using Myo Armband</td><td>University of Kaiserslautern</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Teaching Experience</h2>
+      <table class="tbl">
+        <thead>
+          <tr><th>Course / Seminar</th><th>Dates</th><th>Role</th><th>Department / Institution</th><th>Location</th><th>Responsibilities</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Master Seminars in Visualization &amp; HCI</td><td>Summer 2024</td><td>Lecturer</td><td>Dept. of Computer Science, San Francisco State University</td><td>CA, USA</td><td>Seminar supervision in HCI</td></tr>
+          <tr><td>Computer Graphics, Information Visualization</td><td>Fall 2015, Spring 2016</td><td>Lecturer</td><td>Dept. of Computer Science, Mutah University</td><td>Jordan</td><td>Course development, teaching, exercises</td></tr>
+          <tr><td>AI Ethics</td><td>Spring 2021</td><td>Lecturer</td><td>Dept. of Computer Science, Mutah University</td><td>Jordan</td><td>Course development, teaching, exercises</td></tr>
+          <tr><td>Computer Networks</td><td>Summer 2016</td><td>Co-Instructor</td><td>Dept. of Computer Science, Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+          <tr><td>Object Oriented Programming</td><td>Spring 2020</td><td>Lecturer</td><td>Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+          <tr><td>C++ Programming</td><td>Spring 2021</td><td>Lecturer</td><td>Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+          <tr><td>Java Programming</td><td>Spring 2020</td><td>Lecturer</td><td>Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+          <tr><td>Web Development Programming</td><td>Spring 2017</td><td>Lecturer</td><td>Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+          <tr><td>InfoVis, Visual Analytics &amp; HCI (2-day summer school)</td><td>July 2014</td><td>Lecturer</td><td>Universidad Industrial de Santander</td><td>Colombia</td><td>Exercises</td></tr>
+          <tr><td>Operating Systems</td><td>Spring 2018</td><td>Lecturer</td><td>Mutah University</td><td>Jordan</td><td>Teaching, exercises</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Research Projects Participation</h2>
+      <ul class="publist">
+        <li><strong>VDMS</strong> — Visual Data Management Systems (Intel Labs)</li>
+        <li><strong>Little Fall</strong> — 3D video conference call (Intel Labs)</li>
+        <li><strong>SAF</strong> — Video streaming framework (Intel Labs, with Carnegie Mellon University)</li>
+        <li><strong>Scanner</strong> — Analyzing video at scale (Intel Labs with Stanford University)</li>
+        <li><strong>Video Curation</strong> — Run-time video query pipeline (Intel Labs, OR)</li>
+        <li><strong>Image analyser</strong> — Analyze large medical images (Intel Labs, OR)</li>
+        <li><strong>VIMETRIK</strong> — Visual Specification of Metrics (University of Kaiserslautern with Fraunhofer IESE), 2013–2014</li>
+        <li><strong>Visual-Computing Education</strong> — Master Program in Visual Computing, Colombia (Universidad de Los Andes; funded by DAAD), 2014–2018</li>
+        <li><strong>VIER4ES2</strong> — Virtual and Augmented Reality for Maximum Safety and Reliability of Embedded Systems (University of Kaiserslautern with Fraunhofer IESE), 2012–2014</li>
+        <li><strong>UID4Mobile</strong> — Scalable User Interface Design for Mobile Applications (University of Kaiserslautern with Fraunhofer IESE), 2012–2013</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Certifications</h2>
+      <table class="tbl">
+        <thead><tr><th>Certification</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td>Generative AI: Introduction to Large Language Models</td><td>Apr 2024</td></tr>
+          <tr><td>Introduction to Prompt Engineering for Generative AI</td><td>Apr 2024</td></tr>
+          <tr><td>Microservices Foundations</td><td>Jan 2023</td></tr>
+          <tr><td>Learning AWS Amplify</td><td>Apr 2022</td></tr>
+          <tr><td>Metaverse and NFTs for Marketing</td><td>Apr 2022</td></tr>
+          <tr><td>Statistics Foundations: 2</td><td>Apr 2022</td></tr>
+          <tr><td>Statistics Foundations: The Basics</td><td>Apr 2022</td></tr>
+          <tr><td>Learning Git and GitHub</td><td>Feb 2022</td></tr>
+          <tr><td>React: State Management</td><td>Feb 2022</td></tr>
+          <tr><td>HTTP Essential Training</td><td>Jan 2022</td></tr>
+          <tr><td>Learning Data Science: Understanding the Basics</td><td>Jan 2022</td></tr>
+          <tr><td>Business Analysis Foundations: Business Process Modelling</td><td>Dec 2021</td></tr>
+          <tr><td>React for Web Designers</td><td>Dec 2021</td></tr>
+          <tr><td>D3.js Essential Training for Data Scientists</td><td>Nov 2021</td></tr>
+          <tr><td>Debugging C Code</td><td>Sep 2021</td></tr>
+          <tr><td>AWS API Gateway with HTTP, Lambda, Dynamo DB, and iOS</td><td>Aug 2021</td></tr>
+          <tr><td>Building Serverless Apps on AWS</td><td>Aug 2021</td></tr>
+          <tr><td>Git Essential Training: The Basics</td><td>Aug 2021</td></tr>
+          <tr><td>React Hooks</td><td>Aug 2021</td></tr>
+          <tr><td>Apache Kafka Essential Training: Getting Started</td><td>Jul 2021</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Professional Membership</h2>
+      <ul class="publist">
+        <li><strong>ACM</strong> — Professional Member of Association for Computing Machinery</li>
+        <li><strong>IEEE</strong> — Member, IEEE Computer Society Technical Committee on Visualization and Graphics; Member, IEEE Computer Society Technical Council on Software Engineering</li>
+      </ul>
+    </section>
+
+    <div class="footer">
+      <div>© <script>document.write(new Date().getFullYear())</script> Ragaad AlTarawneh</div>
+      <div class="small">Single-file site — host with GitHub Pages.</div>
+    </div>
   </main>
 </body>
 </html>
