@@ -1,6 +1,6 @@
 .profile-pic {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--chipborder);
