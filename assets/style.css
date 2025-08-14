@@ -1,3 +1,10 @@
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--chipborder);
+}
 
 :root { --bg:#0b0c10; --card:#121418; --text:#e5e7eb; --muted:#9ca3af; --accent:#60a5fa; }
 * { box-sizing: border-box; }
