@@ -58,8 +58,8 @@ ul { margin: 8px 0 0 18px; }
 
 .profile-pic {
   flex-shrink: 0;
-  width: 64px;              /* default size */
-  height: 64px;
+  width: 14px;              /* default size */
+  height: 10px;
   object-fit: cover;
   border-radius: 50%;
   border: 2px solid var(--chipborder);
@@ -111,4 +111,24 @@ ul { margin: 8px 0 0 18px; }
 
 @media (max-width: 480px) {
   .profile-pic { width: 48px; height: 48px; }  /* smaller on narrow screens */
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center; /* Vertically align image & text */
+  gap: 20px; /* Space between them */
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%; /* Optional: makes image circular */
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
