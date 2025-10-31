@@ -1,17 +1,20 @@
-# Resume Site Starter
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-A minimal, static resume website you can host with GitHub Pages.
+# Run and deploy your AI Studio app
 
-## Quick start
-1. Create a new public repo (or `yourusername.github.io`).
-2. Upload these files to the repo root.
-3. In **Settings → Pages**, choose *Deploy from a branch* → `main` (root).
-4. Visit the URL GitHub shows (typically `https://yourusername.github.io/`).
+This contains everything you need to run your app locally.
 
-## Customize
-- Edit `index.html` with your info.
-- Colors and layout live in `assets/style.css`.
-- The page prints cleanly to PDF via the **Print / Save as PDF** button.
+View your app in AI Studio: https://ai.studio/apps/temp/2
 
-## Optional
-- Add a `CNAME` file containing `yourdomain.com` and point DNS to GitHub Pages to use a custom domain.
+## Run Locally
+
+**Prerequisites:**  Node.js
+
+
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
