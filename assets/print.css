@@ -1,8 +1,0 @@
-
-/* Print-friendly tweaks */
-@page { margin: 18mm; }
-body { background: #fff !important; color: #000 !important; }
-.container { box-shadow: none !important; background: #fff !important; border-radius: 0 !important; }
-a { color: #000 !important; text-decoration: none !important; }
-a[href]:after { content: ""; } /* don't append long URLs */
-.footer { display: none !important; }
